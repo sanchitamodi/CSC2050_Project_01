@@ -15,7 +15,7 @@ fi
 
 input="$2"
 exp_output="$3"
-actual_output=$(echo "$input" | "$file")
+actual_output=$("$file" "$input")
 
 if [ $actual_output -eq $exp_output ]; then
 	echo "PASS"

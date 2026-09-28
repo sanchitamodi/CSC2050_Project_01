@@ -1,7 +1,6 @@
 #include <stdio.h>
-int main(){
-	int num;
-	scanf("%d", &num); //pass input from scanf to num
+int main(int argc, char *argv[]){
+	int num = argv[1][0] - '0';
 
 	int factorial = 1;
 	for(int i = 1; i <= num; i++){
